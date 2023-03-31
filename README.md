@@ -1,7 +1,7 @@
 # 사람인 채용공고 추출 프로그램 
 사람인 사이트의 기업공고를 자동으로 추출할 수 있는 코드입니다.
 
-### 설명
+### 설명 (main.go)
 * baseURL에 사람인 채용공고의 검색어를 변경하여 사용할 수 있습니다.
 * default는 "https://www.saramin.co.kr/zf_user/search/recruit?&searchword=devops" 로 "devops" 검색어가 들어있습니다.
 * `searchword=devops` 부분을 변경 가능합니다.
