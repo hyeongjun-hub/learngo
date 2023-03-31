@@ -20,3 +20,7 @@ header : "Enterprise", "Title", "Location", "Link"
 - Title : 공고명
 - Location : 기업 위치
 - Link : 상세 페이지 링크
+
+### 예시사진
+![image](https://user-images.githubusercontent.com/77392219/229047893-cb93f695-3245-47de-9372-8bf3c31de1e6.png)
+
