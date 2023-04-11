@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/hyeongjun-hub/learngo/scrapper"
 	"github.com/labstack/echo"
 	"os"
@@ -22,5 +21,4 @@ func main() {
 	})
 
 	e.Logger.Fatal(e.Start(":1323"))
-	fmt.Println("Let's build")
 }
