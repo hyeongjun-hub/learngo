@@ -35,7 +35,6 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ubuntu
         key: ${{ secrets.EC2_KEY }}
-        port: 22
         script: |
           sudo su
           docker rm -f $(docker ps -qa)
