@@ -30,14 +30,15 @@ jobs:
         tags: chogudwns/saramin
 
     - name: EC2 Docker Run
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.6
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
+          port: 22
           script: |
             sudo su
             docker rm -f $(docker ps -qa)
             docker rmi chogudwns/saramin
             docker pull chogudwns/saramin 
-            docker run -p 80:1323 -t saramin chogudwns/saramin
+            docker run -p 80:1323 --name saramin chogudwns/saramin
