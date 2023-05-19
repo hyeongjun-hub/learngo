@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: chogudwns/saramin:${{ github.head_ref }}
+        tags: ${{ secrets.DOCKER_HUB_ID }}/saramin:${{ github.head_ref }}
         
     - name: Build the Docker image
       run: docker build . -p 1323:1323 --file Dockerfile --tag my-image-name:${{ github.head_ref }}
