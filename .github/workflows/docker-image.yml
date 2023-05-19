@@ -40,4 +40,4 @@ jobs:
           docker rm -f $(docker ps -qa)
           docker rmi chogudwns/saramin
           docker pull chogudwns/saramin 
-          docker run -p 80:1323 --name saramin chogudwns/saramin
+          docker run -d -p 80:1323 --name saramin chogudwns/saramin
