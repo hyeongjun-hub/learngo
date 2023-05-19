@@ -19,7 +19,7 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1
       with:
-        username: ${{ secrets.DOCKER_HUB_ID }}
+        username: chogudwns
         password: ${{ secrets.DOCKER_HUB_PW }}
 
     - name: Build and push
@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{ secrets.DOCKER_HUB_ID }}/saramin:${{ github.head_ref }}
+        tags: chogudwns/saramin:${{ github.head_ref }}
         
     - name: Build the Docker image
       run: docker build . -p 1323:1323 --file Dockerfile --tag my-image-name:${{ github.head_ref }}
